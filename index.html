@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        h2, p, form, div {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <div class="card" style="width: 400px; height: 550px;">
         <div class="container">
-    <form action="" method="post">
+    <form action="" method="post" class="signup-form">
         <h2>Join us today!</h2>
-    <p>Sign up now to become a member</p>
+    <p class="Sign">Sign up now to become a member</p>
 
-    <input type="text" id="Name" placeholder="Enter Name" > <br><br>
+    <input type="text" id="Name" placeholder="Enter Name" required > <br><br>
     <input type="email" id="email" placeholder="Enter Email" required > <br><br>
-    <input type="password" id="password" placeholder="Choose A Password" required > <br><br>
-    <input type="password" placeholder="Re-Enter Password" required > <br><br>
-    <input type="checkbox"> I agree to the <a href="https://www.google.com" target="_blank">terms and conditions.</a> <br><br>
+    <input type="password" id="password" placeholder="Choose A Password" 
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase 
+    and lowercase letter, and at least 8 characters" required > <br><br>
+
+    <input type="password" placeholder="Re-Enter Password" 
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase 
+    and lowercase letter, and at least 8 characters" required > <br><br>
+
+    <input type="checkbox"  required > I agree to the <a href="https://www.google.com" target="_blank">terms and conditions.</a> <br><br>
     <input type="submit" value="Signup"> <br>
     <p>Already a member? <a href="https://www.google.com" target="_blank">Login Here</a></p>
     </form>
