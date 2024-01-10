@@ -37,8 +37,8 @@ input[type=email] {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;background-color: rgb(241, 233, 248);
-
+    box-sizing: border-box;
+    background-color: rgb(241, 233, 248);
 }
 
 input[type=password] {
@@ -48,8 +48,8 @@ input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;background-color: rgb(241, 233, 248);
-
+    box-sizing: border-box;
+    background-color: rgb(241, 233, 248);
 }
 
 input[type=submit] {
