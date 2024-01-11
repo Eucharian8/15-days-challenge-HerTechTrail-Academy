@@ -5,8 +5,8 @@ body {
 }
 
 .card { 
-    box-shadow: 0 2px 8px 0 ;
-    width: 40%;
+    box-shadow: 0 2px 2px 0;
+    width: 30%;
     height: 30%;
     border-radius: 5px;
     background-color: white;
@@ -17,33 +17,14 @@ body {
 
 .container {
     padding: 2px 2px;
-}
-
-input[type=text] {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+    background-color: #f2f2f2;
     border-radius: 5px;
-    box-sizing: border-box;
-    background-color: rgb(241, 233, 248);
+    height: 550px;
 }
 
-input[type=email] {
+input[type=text], [type=email], [type=password] {
     width: 70%;
-    padding: 12px 20px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    background-color: rgb(241, 233, 248);
-}
-
-input[type=password] {
-    width: 70%;
-    padding: 12px 20px;
+    padding: 12px 8px;
     margin: 5px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -54,7 +35,7 @@ input[type=password] {
 
 input[type=submit] {
     width: 70%;
-    padding: 12px 20px;
+    padding: 12px 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -67,6 +48,12 @@ input[type=submit] {
     cursor: pointer;
 }
 
+input[type=submit]:hover {
+    background-color: blue;
+}
+
+
+
 a {
     color: blueviolet;
     text-decoration: none;
@@ -78,6 +65,7 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
     .signup-form {
-        width: 100%;
+        width: 90% viewport;
+        margin-top: 15px;
     }
 }
