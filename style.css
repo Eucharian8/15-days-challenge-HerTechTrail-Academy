@@ -55,12 +55,12 @@ input[type=submit]:hover {
 
 
 a {
-    color: blueviolet;
+    color: blue;
     text-decoration: none;
     cursor: pointer;
 }
 a:hover {
-    color: blue;
+    color: blueviolet;
 }
 
 @media only screen and (max-width: 600px) {
